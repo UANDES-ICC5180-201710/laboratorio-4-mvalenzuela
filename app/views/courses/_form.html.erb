@@ -22,6 +22,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :quota %>
+    <%= f.number_field :quota, min:"1" %>
+  </div>
+
+  <div class="field">
     <%= f.label :teacher_id %>
     <%= f.select :teacher, options_for_select(Person.all.map{|s|[s.to_s, s.id]}) %>
   </div>
