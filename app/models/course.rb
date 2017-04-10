@@ -8,7 +8,7 @@ class Course < ApplicationRecord
   validates :title, uniqueness: true
   validates :code, length: { maximum: 10 }
   validates :code, uniqueness: true
-  #validar que code es numero?
+  validates :quota, numericality: true
 
   def to_s
     return title

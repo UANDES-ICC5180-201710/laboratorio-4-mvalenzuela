@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :grade do
-    person nil
-    assigment nil
-    value nil
+    person
+    assignment
+    value 7
   end
 end
